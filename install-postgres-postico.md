@@ -29,7 +29,7 @@ then you are all set and can go to the next step!
 
 If you don't have it follow the install instructions on http://brew.sh/ . You will need to run a run command in your terminal. Come find an instructor if you have permissions issues. 
 
-Installing Postgres
+## Installing Postgres
 
 1. Open a terminal and run this command: `$ brew install postgres`
 
