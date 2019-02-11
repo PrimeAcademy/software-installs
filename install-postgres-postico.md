@@ -19,7 +19,7 @@ To check if you have recently updated Homebrew.
 
 First you need to get brew. You can test if you have brew with this command:
 
-`$ which brew`
+`which brew`
 
 if it logs
 
@@ -31,22 +31,22 @@ If you don't have it follow the install instructions on http://brew.sh/ . You wi
 
 ## Installing Postgres
 
-1. Open a terminal and run this command: `$ brew install postgres`
+1. Open a terminal and run this command: `brew install postgres`
 
 ### Starting/Stopping Postgres (Option 1 of 2)
 
 If you have installed Postgres with Homebrew, you can use the built-in Brew Services commands to start/stop the server as below:
 
-- Stop the server: `$ brew services stop postgresql`
-- Start the server: `$ brew services start postgresql`
-- See what is running: `$ brew services list`
+- Stop the server: `brew services stop postgresql`
+- Start the server: `brew services start postgresql`
+- See what is running: `brew services list`
 
 
 ### Starting/Stopping Postgres (Option 2 of 2)
 
 This method gives you a log of errors like node does. As the server receives requests and runs queries, it will give you output in the terminal.
 
-- In your terminal, run: `$ postgres -D /usr/local/var/postgres` to start Postgres using the specified file location as a data directory
+- In your terminal, run: `postgres -D /usr/local/var/postgres` to start Postgres using the specified file location as a data directory
 - To **stop** Postgres, press the control and C keys at the same time
 
 
@@ -54,14 +54,15 @@ This method gives you a log of errors like node does. As the server receives req
 
 You might find it inconvenient to start postgres by typing in all of that stuff. You can make your life easier, by setting a PGDATA environment variable.
 
-1. In terminal, run: `$cd ~` to navigate to your user’s directory
+1. In terminal, run: `cd ~` to navigate to your user’s directory
 2. Open and/or create a file named .bash_profile
+2. Open the folder or file in a text editor (example: `code .`)
 3. Add the following line to the file: 
     `export PGDATA="/usr/local/var/postgres"`
 4. Save the file.
 5. Close the terminal window.
 6. Open a new terminal window (to see the changes take effect).
-7. Run `$ postgres` to start your database.
+7. Run `postgres` to start your database.
 
 ## Postico (Database Client GUI app) Overview
 
@@ -102,7 +103,7 @@ First thing we need to do is establish a connection to our server. Postico allow
 
 #### To manually create your database
 
-1. In terminal, run `$ createdb your_username_here`
+1. In terminal, run `createdb your_username_here`
 
 If yours was `lukeschlangen` you would type: `createdb lukeschlangen`
 
