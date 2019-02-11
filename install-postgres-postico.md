@@ -55,9 +55,9 @@ This method gives you a log of errors like node does. As the server receives req
 You might find it inconvenient to start postgres by typing in all of that stuff. You can make your life easier, by setting a PGDATA environment variable.
 
 1. In terminal, run: `cd ~` to navigate to your user’s directory
-2. Open and/or create a file named .bash_profile
+2. Open and/or create a file named `.bash_profile`
 2. Open the folder or file in a text editor (example: `code .`)
-3. Add the following line to the file: 
+3. Add the following line to the end of the `.bash_profile` file: 
     `export PGDATA="/usr/local/var/postgres"`
 4. Save the file.
 5. Close the terminal window.
