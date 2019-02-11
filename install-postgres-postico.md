@@ -94,7 +94,7 @@ First thing we need to do is establish a connection to our server. Postico allow
     - You can find your username in your terminal:
 ![Add Connection](images/terminal-username.png)
 - **Password** If you followed the above installation of Postgres, this can be left blank
-- **Database** By default, Postgres creates a database called whatever your username is. Here ‘krisszafranski’ is Kris Szafranski's username.
+- **Database** By default, Postgres creates a database called whatever your username is. Here `lukeschlangen` is Luke Schlangen's username.
 
 ### Create a Database
 
@@ -104,7 +104,7 @@ First thing we need to do is establish a connection to our server. Postico allow
 
 1. In terminal, run `$ createdb your_username_here`
 
-If yours was `krisszafranski` you would type: `createdb krisszafranski`
+If yours was `lukeschlangen` you would type: `createdb lukeschlangen`
 
 ## Confirm Everything is Working
 
