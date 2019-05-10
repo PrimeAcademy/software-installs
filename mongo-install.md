@@ -22,9 +22,17 @@ sudo chown -R `id -un` /data/db
 
 Now, to check and make sure everything is working OK, fire up MONGO:
 
+Use brew to have it run in the background:
+
 ```
 brew services start mongodb
-mongo
+```
+
+__OR__
+
+To see output in the terminal as mongo is running:
+```
+mongod
 ```
 
 The result, is that you should see a `>`
