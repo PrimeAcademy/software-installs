@@ -35,6 +35,14 @@ To see output in the terminal as mongo is running:
 mongod
 ```
 
+### Interactive Mode
+
+You can also run Mongo in interactive mode. 
+
+```
+mongo
+```
+
 The result, is that you should see a `>`
 
 `Control + C` to stop mongo. 
