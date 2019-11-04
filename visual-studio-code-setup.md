@@ -1,5 +1,7 @@
 # Visual Studio Code Setup
-Suggested visual studio code environment for Prime
+Suggested visual studio code environment for Prime.
+
+Install from the web: https://code.visualstudio.com/download
 
 ## Shortcuts and handy tricks
 - Turn on auto save. `File > Auto Save`
