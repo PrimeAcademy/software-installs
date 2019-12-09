@@ -44,7 +44,9 @@ Install from the web: https://code.visualstudio.com/download
 - Default keybindings: [https://code.visualstudio.com/docs/getstarted/keybindings
 ](https://code.visualstudio.com/docs/getstarted/keybindings)
 	- Delete an entire line `⇧⌘K`	
-	
+
+# STOP HERE FOR NOW (This bottom part is for next week)
+
 ## Debugging
 Debugging node.js applications (once per application)
 
