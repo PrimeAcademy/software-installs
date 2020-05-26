@@ -1,5 +1,5 @@
 # Postgres and Postico Install
-*Last updated 1/2018*
+*Last updated 5/2020*
 
 
 ## Postgres Overview
@@ -41,29 +41,6 @@ If you have installed Postgres with Homebrew, you can use the built-in Brew Serv
 - Start the server: `brew services start postgresql`
 - See what is running: `brew services list`
 
-
-### Starting/Stopping Postgres (Option 2 of 2)
-
-This method gives you a log of errors like node does. As the server receives requests and runs queries, it will give you output in the terminal.
-
-- In your terminal, run: `postgres -D /usr/local/var/postgres` to start Postgres using the specified file location as a data directory
-- To **stop** Postgres, press the control and C keys at the same time
-
-
-#### Create an Environment Variable Postgres (optional)
-
-You might find it inconvenient to start postgres by typing in all of that stuff. You can make your life easier, by setting a PGDATA environment variable.
-
-1. In terminal, run: `cd ~` to navigate to your user’s directory
-2. Open and/or create a file named `.zshrc`
-2. Open the folder or file in a text editor (example: `code .`)
-3. Add the following line to the end of the `.zshrc` file: 
-    `export PGDATA="/usr/local/var/postgres"`
-4. Save the file.
-5. Close the terminal window.
-6. Open a new terminal window (to see the changes take effect).
-7. Run `postgres` to start your database.
-
 ## Postico (Database Client GUI app) Overview
 
 At this point we will have a Postgres server program running on our local computer. We’re now going to install a graphical Client so we can have a fancy way to interact with our new server software. If this doesn’t work, please read to the end of the instructions to try these things before asking questions! We have solutions for several common problems.
@@ -97,7 +74,7 @@ First thing we need to do is establish a connection to our server. Postico allow
 - **Password** If you followed the above installation of Postgres, this can be left blank
 - **Database** By default, Postgres creates a database called whatever your username is. Here `lukeschlangen` is Luke Schlangen's username.
 
-### Create a Database
+## ERRORS? Create a Database
 
 **IMPORTANT: Only complete the following steps if you get an error when you try to connect stating this database does not exist.**
 
