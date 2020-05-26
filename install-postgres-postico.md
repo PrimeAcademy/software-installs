@@ -1,5 +1,5 @@
 # Postgres and Postico Install
-*Last updated 1/2018*
+*Last updated 5/2020*
 
 
 ## Postgres Overview
@@ -74,7 +74,7 @@ First thing we need to do is establish a connection to our server. Postico allow
 - **Password** If you followed the above installation of Postgres, this can be left blank
 - **Database** By default, Postgres creates a database called whatever your username is. Here `lukeschlangen` is Luke Schlangen's username.
 
-### Create a Database
+## ERRORS? Create a Database
 
 **IMPORTANT: Only complete the following steps if you get an error when you try to connect stating this database does not exist.**
 
