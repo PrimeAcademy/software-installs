@@ -1,12 +1,27 @@
 # Installing SSH Key on Macbook for GitHub access
 
-I'm not going to walk through the reasoning behind using SSH keys as authorization or why GitHub is making this change. Let's just dive into the process and get the SSH keys created, installed, and referenced on GitHub.
+An SSH Key is a special file that git uses to login to Github from the terminal. To setup the SSH access to Github, we need to create the key file on our computer, and then register it with our Github account. You will have to do this on each different computer you use.
 
-## Create the SSH Key
-1. Open terminal. **I recommend using the terminal application on your MacBook rather than the integrated terminal in VS Code.**
-1. Paste the following code into the terminal, substituting in your GitHub account email address for the `[your GitHub email]`:
+## Script
+Because there are so many steps, we've found it easiest to do this via a script.
+In your terminal (zsh or bash), paste and enter the following:
+```
+bash <(curl -sSL https://github.com/PrimeAcademy/software-installs/files/6064749/git-ssh.sh.txt)
+```
+Enter your email.
+
+Then, go to https://github.com/settings/ssh/new
+
+Copy the SSH key the script generated into the key field, and give it a name. 
+
+After you add, should be good!
+
+## Manual Install
+### Create the SSH Key
+1. Open terminal.
+1. Paste the following code into the terminal, substituting "youremail@whatever.com" for your actual email address:
   ```
-  $ ssh-keygen -t -rsa -b 4096 -C "[your GitHub email]"
+  $ ssh-keygen -t -rsa -b 4096 -C "youremail@whatever.com"
   ```
 3. This generates a new SSH key, using the provided email as a label.
   ```
@@ -19,7 +34,7 @@ I'm not going to walk through the reasoning behind using SSH keys as authorizati
 5. At the prompt, type a secure passphrase. (This is optional. Using a passphrase will require you to enter the passphrase each time you attempt to authenticate with GitHub.)
 
 
-## Add your SSH Key to the ssh-agent
+### Add your SSH Key to the ssh-agent
 **DO NOT USE A THIRD-PARTY LIBRARY TO ADD THE SSH KEY!** Use the native MacBook `ssh-add` command.
 
 1. Start the ssh-agent in the background.
