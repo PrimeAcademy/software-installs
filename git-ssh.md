@@ -6,7 +6,7 @@ An SSH Key is a special file that git uses to login to Github from the terminal.
 Because there are so many steps, we've found it easiest to do this via a script.
 In your terminal (zsh or bash), paste and enter the following:
 ```
-bash <(curl -sSL https://github.com/PrimeAcademy/software-installs/files/6064749/git-ssh.sh.txt)
+bash <(curl -sSL https://raw.githubusercontent.com/PrimeAcademy/software-installs/master/git-ssh.sh)
 ```
 Enter your email.
 
