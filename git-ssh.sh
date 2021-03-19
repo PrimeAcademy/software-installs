@@ -29,7 +29,7 @@ eval "$(ssh-agent -s)" > /dev/null
 # to automatically load keys
 echo "
 
-Host *
+Host github.com
   AddKeysToAgent yes
   IdentityFile ~/.ssh/github-prime
 
