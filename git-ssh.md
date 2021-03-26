@@ -4,6 +4,7 @@ An SSH Key is a special file that git uses to login to Github from the terminal.
 
 ## Video Walkthrough
 https://vimeo.com/520099465
+Password: pr1me
 
 ## Script
 Because there are so many steps, we've found it easiest to do this via a script.
