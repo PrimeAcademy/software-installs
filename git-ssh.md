@@ -2,6 +2,9 @@
 
 An SSH Key is a special file that git uses to login to Github from the terminal. To setup the SSH access to Github, we need to create the key file on our computer, and then register it with our Github account. You will have to do this on each different computer you use.
 
+## Video Walkthrough
+https://vimeo.com/520099465
+
 ## Script
 Because there are so many steps, we've found it easiest to do this via a script.
 In your terminal (zsh or bash), paste and enter the following:
@@ -16,7 +19,7 @@ Copy the SSH key the script generated into the key field, and give it a name.
 
 After you add, should be good!
 
-## Manual Install
+## (INSTRUCTOR USE ONLY) Manual Install
 ### Create the SSH Key
 1. Open terminal.
 1. Paste the following code into the terminal, substituting "youremail@whatever.com" for your actual email address:
