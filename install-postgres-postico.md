@@ -43,6 +43,21 @@ If you have installed Postgres with Homebrew, you can use the built-in Brew Serv
 - Start the server: `brew services start postgresql`
 - See what is running: `brew services list`
 
+#### Option 2
+This depends on which Mac you have and where your postgres is installed:
+M1: /opt/homebrew/var/postgres
+Intel: /usr/local/var/postgres
+
+
+
+- Stop the server: `ctrl + c`
+- Start the server: `postgres -D /usr/local/var/postgres` for Intel, M1 is `postgres -D /opt/homebrew/var/postgres`
+
+`
+- See what is running: The terminal where you run the command will be outputting logs. It takes over the tab.
+
+
+
 ## Postico (Database Client GUI app) Overview
 
 At this point we will have a Postgres server program running on our local computer. We’re now going to install a graphical Client so we can have a fancy way to interact with our new server software. If this doesn’t work, please read to the end of the instructions to try these things before asking questions! We have solutions for several common problems.
