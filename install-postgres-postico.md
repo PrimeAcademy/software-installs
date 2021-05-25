@@ -1,9 +1,9 @@
 # Postgres and Postico Install
-*Last updated 5/2020*
+*Last updated 5/2021*
 
 
 ## Postgres Overview
-
+
 Postgres is an SQL database. This guide merely shows you how to install the software needed to run Postgres. Actual lectures on using Postgres will follow.
 
 ### Prerequisites
@@ -33,6 +33,8 @@ If you don't have it follow the install instructions on http://brew.sh/ . You wi
 
 1. Open a terminal and run this command: `brew install postgres`
 
+>> If for some reason this does not work, please reach out to your instructor ASAP.
+
 ### Starting/Stopping Postgres (Option 1 of 2)
 
 If you have installed Postgres with Homebrew, you can use the built-in Brew Services commands to start/stop the server as below:
@@ -55,6 +57,7 @@ At this point we will have a Postgres server program running on our local comput
 First thing we need to do is establish a connection to our server. Postico allows you to save many different connections. For now, we just need one to connect to the database server on our local computer.
 
 ### Create New Favorite
+>> Make sure your database server is running -- see Starting/Stopping
 
 1. Click New Favorite
 
@@ -74,7 +77,12 @@ First thing we need to do is establish a connection to our server. Postico allow
 - **Password** If you followed the above installation of Postgres, this can be left blank
 - **Database** By default, Postgres creates a database called whatever your username is. Here `lukeschlangen` is Luke Schlangen's username.
 
-## ERRORS? Create a Database
+## ERRORS? 
+
+### Could not connect -- Connection Refused on Port 5432
+Make sure your database is running! See Starting/Stopping
+
+### Fatal -- Database does not exist
 
 **IMPORTANT: Only complete the following steps if you get an error when you try to connect stating this database does not exist.**
 
