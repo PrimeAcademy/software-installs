@@ -31,7 +31,9 @@ If you don't have it follow the install instructions on http://brew.sh/ . You wi
 
 ## Installing Postgres
 
-1. Open a terminal and run this command: `brew install postgres`
+1. Open a terminal and run this command: `brew install postgresql`
+
+Docs here: https://formulae.brew.sh/formula/postgresql
 
 >> If for some reason this does not work, please reach out to your instructor ASAP.
 
