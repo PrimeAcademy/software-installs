@@ -1,5 +1,5 @@
 # Postgres and Postico Install
-*Last updated 5/2021*
+*Last updated 9/2021*
 
 
 ## Postgres Overview
