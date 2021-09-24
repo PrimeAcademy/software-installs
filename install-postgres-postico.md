@@ -106,7 +106,7 @@ Make sure your database is running! See Starting/Stopping
 
 1. In terminal, run `createdb your_username_here`
 
-If yours was `krisszafranski` you would type: `createdb krisszafranski`
+If yours was `lukeschlangen` you would type: `createdb lukeschlangen`
 
 ## Confirm Everything is Working
 
