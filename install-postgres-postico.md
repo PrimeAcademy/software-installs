@@ -37,7 +37,7 @@ Docs here: https://formulae.brew.sh/formula/postgresql
 
 >> If for some reason this does not work, please reach out to your instructor ASAP.
 
-### Starting/Stopping Postgres (Option 1 of 2)
+### Starting/Stopping Postgres with Brew Services (Option 1 of 2)
 
 If you have installed Postgres with Homebrew, you can use the built-in Brew Services commands to start/stop the server as below:
 
@@ -45,19 +45,18 @@ If you have installed Postgres with Homebrew, you can use the built-in Brew Serv
 - Start the server: `brew services start postgresql`
 - See what is running: `brew services list`
 
-#### Option 2
+#### Running Postgres Directly (Option 2 of 2)
+
 This depends on which Mac you have and where your postgres is installed:
-M1: /opt/homebrew/var/postgres
-Intel: /usr/local/var/postgres
 
-
-
-- Stop the server: `ctrl + c`
+- M1: /opt/homebrew/var/postgres
+- Intel: /usr/local/var/postgres
 - Start the server: `postgres -D /usr/local/var/postgres` for Intel, M1 is `postgres -D /opt/homebrew/var/postgres`
+- Stop the server: `ctrl + c`
 
-`
-- See what is running: The terminal where you run the command will be outputting logs. It takes over the tab.
+One nice thing about using this method is it allows you to see what is running: The terminal where you run the command will be outputting logs just like node does. It takes over the tab.
 
+The downside is that if that tab is closed, stopping the process is much trickier.
 
 
 ## Postico (Database Client GUI app) Overview
@@ -107,7 +106,7 @@ Make sure your database is running! See Starting/Stopping
 
 1. In terminal, run `createdb your_username_here`
 
-If yours was `lukeschlangen` you would type: `createdb lukeschlangen`
+If yours was `krisszafranski` you would type: `createdb krisszafranski`
 
 ## Confirm Everything is Working
 
