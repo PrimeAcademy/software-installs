@@ -47,10 +47,10 @@ If you have installed Postgres with Homebrew, you can use the built-in Brew Serv
 
 #### Running Postgres Directly (Option 2 of 2)
 
-This depends on which Mac you have and where your postgres is installed:
+This depends on which Mac you have and where your postgres is installed. To find out type `which postgres`:
 
-- M1: /opt/homebrew/var/postgres
-- Intel: /usr/local/var/postgres
+- M1: `/opt/homebrew/var/postgres`
+- Intel: `/usr/local/var/postgres`
 - Start the server: `postgres -D /usr/local/var/postgres` for Intel, M1 is `postgres -D /opt/homebrew/var/postgres`
 - Stop the server: `ctrl + c`
 
@@ -73,6 +73,7 @@ At this point we will have a Postgres server program running on our local comput
 First thing we need to do is establish a connection to our server. Postico allows you to save many different connections. For now, we just need one to connect to the database server on our local computer.
 
 ### Create New Favorite
+
 >> Make sure your database server is running -- see Starting/Stopping
 
 1. Click New Favorite
@@ -96,13 +97,14 @@ First thing we need to do is establish a connection to our server. Postico allow
 ## ERRORS? 
 
 ### Could not connect -- Connection Refused on Port 5432
-Make sure your database is running! See Starting/Stopping
+>> Make sure your database is running! See Starting/Stopping
 
 ### Fatal -- Database does not exist
 
 **IMPORTANT: Only complete the following steps if you get an error when you try to connect stating this database does not exist.**
 
 #### To manually create your database
+>> Make sure your database is running! See Starting/Stopping
 
 1. In terminal, run `createdb your_username_here`
 
