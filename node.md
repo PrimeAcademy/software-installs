@@ -12,6 +12,10 @@ In order for our app to run and serve the files we need, you'll need to run Node
 
 Default method to tell Node to run a JavaScript file: `node /path/to/javascriptFile.js`
 
+### MacOS Monterey Users: Turn Off AirPlay Receiver
+
+If your Mac is running the MacOS Monterey operating system, you'll need to turn off "AirPlay Receiver" in the “Sharing” System Preference. This is necessary for you to run a web server using our default configuration. More info [here](https://developer.apple.com/forums/thread/682332).
+
 ### Start Your Server
 
 Typically at Prime we use this to start a web server: `node server/app.js` or `node server/server.js`
