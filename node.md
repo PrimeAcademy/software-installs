@@ -4,7 +4,7 @@ You should only have to install Homebrew and Node once in your time at Prime. Fo
 ## Installing Homebrew and Node.js (one-time)
 
 1. [Install Homebrew](http://brew.sh/). This will be done on the command line (Terminal)
-2. Once Homebrew is installed, run the command: `brew install node`
+2. Once Homebrew is installed, run the command: `brew install node@16`
 3. When this is complete, run this at your Terminal: `node --version` If you see a number, you are good to go.
 
 ## Running Code Using Node
