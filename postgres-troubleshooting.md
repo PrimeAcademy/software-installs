@@ -27,6 +27,102 @@ brew services start postgresql
 
 If `brew services list` continues to show an _error_ status, continue with the troubleshooting guide below.
 
+
+## Resolving common postgres errors
+
+### Have you tried turning it off and then back on again?
+
+Restart your computer! Then run:
+
+```
+# See if it's running again
+brew services list
+
+# If not, try restarting again
+brew services restart postgresql
+
+# Check to see if that fixed it
+brew services list
+```
+
+
+### postmaster.pid already exists
+
+Postgres sometimes has trouble if your computer shuts down unexpectedly (eg, out of battery). Deleting your `postmaster.pid` file can resolve this type of error. But first you need to find the file!
+
+Try:
+
+```
+ls /usr/local/var/postgres/postmaster.id
+
+# or
+
+ls /opt/homebrew/var/postgres/postmaster.pid
+
+# or
+
+ls $PGDATA/postmaster.pid
+```
+
+One of these commands will hopefully print out the file path (if it prints nothing, the file is not there). If so, you may remove the file and restart postgres:
+
+```
+# use your located file path here 👇
+rm /usr/local/var/postgres/postmaster.id
+
+# Restart the service
+brew services restart postgresql
+
+# Verify it's running
+brew services list
+```
+
+----
+
+If you _cannot_ find the `postmaster.pid` file, read through the [_Debugging Postgres Errors_](#debugging-postgres-errors) section, then follow the direction below.
+
+Your [error log file](#debugging-postgres-errors) might show something like:
+
+> FATAL:  lock file "postmaster.pid" already exists
+> HINT:  Is another postmaster (PID 467) running in data directory "/opt/homebrew/var/postgres"?
+
+The "data directory" is where the `postmaster.pid` file is located. You should not be able to run 
+
+```
+# Remove the pid file
+rm /opt/homebrew/var/postgres/postmaster.pid
+
+# Restart the service
+brew services restart postgresql
+
+# Verify it's running
+brew services list
+```
+
+
+### The data directory was initialized by PostgreSQL version...
+
+You may see an error in your [error log file](#debugging-postgres-errors) like:
+
+> The data directory was initialized by PostgreSQL version 13, which is not compatible with this version 14.1.
+
+The version numbers might be different, but the general error will be the same. 
+
+Use `brew` to fix this error:
+
+```
+brew postgresql-upgrade-database
+```
+
+Then restart your database:
+
+```
+brew services restart postgresql
+
+# verify it's running
+brew services list
+```
+
 ## Debugging Postgres Errors
 
 **1. Find your error log file**
@@ -81,35 +177,3 @@ eg `tail /usr/local/var/log/postgres.log`
 
 Then google the error message! You may find something useful!
 
-### Common postgres errors
-
-**postmaster.pid already exists**
-
-Your error log file might show something like:
-
-> FATAL:  lock file "postmaster.pid" already exists
-> HINT:  Is another postmaster (PID 467) running in data directory "/opt/homebrew/var/postgres"?
-
-To fix this, we can delete that `postmaster.pid` file. That file could be in different locations, depending on your computer. But according to that _HINT_, it should be in `/opt/homebrew/var/postgres`. So to delete it, you'd run:
-
-```
-rm /opt/homebrew/var/postgres/postmaster.pid
-```
-
-You may then need to restart postgres:
-
-```
-brew services restart postgresql
-```
-
-**The data directory was initialized by PostgreSQL version...**
-
-> The data directory was initialized by PostgreSQL version 13, which is not compatible with this version 14.1.
-
-The version numbers might be different, but the general error will be the same. 
-
-Use `brew` to fix this error:
-
-```
-brew postgresql-upgrade-database
-```
