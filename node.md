@@ -6,8 +6,9 @@ You should only have to install Homebrew and Node once in your time at Prime. Fo
 1. [Install Homebrew](http://brew.sh/). This will be done on the command line (Terminal)
 2. Once Homebrew is installed, run the command: `brew install node@16`
 3. When this is complete, run this at your Terminal: `node --version` If you see a number with 16.X, you are good to go.
-4. If you get a `command node not found` error, you need to link it. `echo 'export PATH="/opt/homebrew/opt/node@16/bin:$PATH"' >> ~/.zshrc` -- close your terminal, then reopen. Try step 3 again.
-  5. Message that may help:
+4. If you get a `command node not found` error, you need to link it. 
+  - Run this in the terminal to link: `echo 'export PATH="/opt/homebrew/opt/node@16/bin:$PATH"' >> ~/.zshrc` -- close your terminal, then reopen. Try step 3 again.
+  - Message that may help:
   ```
   node@16 is keg-only, which means it was not symlinked into /opt/homebrew,
 because this is an alternate version of another formula.
