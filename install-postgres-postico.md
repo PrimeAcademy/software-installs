@@ -23,7 +23,8 @@ First you need to get brew. You can test if you have brew with this command:
 
 if it logs
 
-`/usr/local/bin/brew`
+`/usr/local/bin/brew` for Intel or
+`/opt/homebrew/bin/brew` for M1
 
 then you are all set and can go to the next step!
 
