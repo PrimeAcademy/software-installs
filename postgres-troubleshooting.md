@@ -53,7 +53,7 @@ Postgres sometimes has trouble if your computer shuts down unexpectedly (eg, out
 Try:
 
 ```
-ls /usr/local/var/postgres/postmaster.id
+ls /usr/local/var/postgres/postmaster.pid
 
 # or
 
