@@ -16,7 +16,7 @@ If you need to have node@16 first in your PATH, run:
   echo 'export PATH="/opt/homebrew/opt/node@16/bin:$PATH"' >> ~/.zshrc
   ```
   For Intel:
-  - Run this in the terminal to linkg: `echo 'export PATH=“/usr/local/opt/node@16/bin:$PATH”' >> ~/.zshrc`
+  - Run this in the terminal to linkg: `echo 'export PATH="/usr/local/opt/node@16/bin:$PATH"' >> ~/.zshrc`
   
   
   For M1:
