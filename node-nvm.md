@@ -14,7 +14,6 @@ Now we can use `nvm` to install node:
 
 ```sh
 nvm install --lts
-nvm use --lts
 ```
 
 To verify Node was installed, run:
