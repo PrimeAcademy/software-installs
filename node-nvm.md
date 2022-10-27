@@ -2,7 +2,18 @@
 
 NVM (Node Version Manager) is a helper tool for installing Node.
 
-First, we need to install NVM. Run this command in your terminal:
+### First, it has some prerequisites.
+You may need to install xcode if you haven't before.
+In your terminal, run `xcode-select --install`
+
+You will need to make sure there is a `.zshrc` file.
+In your terminal, run `touch ~/.zshrc`
+
+### M1 Only
+If you have a M1/M2 Mac, you'll need to install rosetta:
+In your terminal, run `softwareupdate --install-rosetta`
+
+Next, we need to install NVM. Run this command in your terminal:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
