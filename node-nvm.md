@@ -13,6 +13,8 @@ In your terminal, run `touch ~/.zshrc`
 If you have a M1/M2 Mac, you'll need to install rosetta:
 In your terminal, run `softwareupdate --install-rosetta`
 
+
+## Install NVM
 Next, we need to install NVM. Run this command in your terminal:
 
 ```sh
