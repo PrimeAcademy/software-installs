@@ -1,3 +1,5 @@
+*** DEPRECATED 2022 ***
+
 # Troubleshooting Postgres
 
 This guide assumes that postgres was installed using `brew`.
