@@ -1,3 +1,5 @@
+*** DEPRECATED DO NOT USE ***
+
 # mongo-install
 
 Mongo is an open source, NoSQL database. You can think of it like an Array of objects that will keep track of our data even after we reboot our server.

@@ -1,4 +1,4 @@
-DEPRECATED DO NOT USE
+*** DEPRECATED DO NOT USE ***
 
 [Use nvm instead.](./node-nvm.md)
 

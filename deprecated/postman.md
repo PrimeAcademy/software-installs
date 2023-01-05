@@ -1,3 +1,5 @@
+*** DEPRECATED DO NOT USE ***
+
 # Install Postman
 
 Install [Postman](https://www.getpostman.com/downloads/). 

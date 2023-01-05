@@ -1,4 +1,4 @@
-*** DEPRECATED 2022 ***
+*** DEPRECATED DO NOT USE ***
 
 # Troubleshooting Postgres
 

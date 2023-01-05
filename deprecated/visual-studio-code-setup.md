@@ -1,3 +1,5 @@
+*** DEPRECATED DO NOT USE ***
+
 # Visual Studio Code Setup
 Suggested visual studio code environment for Prime.
 
