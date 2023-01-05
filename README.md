@@ -1,6 +1,4 @@
-# Software Install Notes
+# Software Installs 2023
 
-- [VS Code](visual-studio-code-setup.md)
-- [NodeJS](node.md)
-- [MongoDB](mongo-install.md)
-- [PostgreSQL & Postico](install-postgres-postico.md)
+- [NodeJS with NVM](node-nvm.md)
+- [PostgreSQL & Postico](./install-postgress.app-postico.md)
