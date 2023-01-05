@@ -1,3 +1,7 @@
+DEPRECATED DO NOT USE
+
+[Use nvm instead.](./node-nvm.md)
+
 # Installing and Running Node
 You should only have to install Homebrew and Node once in your time at Prime. Follow the instructions below.
 
