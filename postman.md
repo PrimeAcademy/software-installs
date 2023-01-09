@@ -1,6 +1,6 @@
 # Install Postman
 
-Install [Postman](https://www.getpostman.com/downloads/). 
+[Download and install Postman](https://www.getpostman.com/downloads/) 
 
-Open the zip, drag to your application folder.
+Open the zip file, drag to your application folder.
 

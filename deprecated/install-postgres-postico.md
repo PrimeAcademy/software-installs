@@ -1,3 +1,7 @@
+*** DEPRECATED DO NOT USE ***
+
+[Use the binary app instead.](../install-postgress.app-postico.md)
+
 # Postgres and Postico Install
 *Last updated 9/2021*
 

@@ -1,3 +1,4 @@
+*** DEPRECATED DO NOT USE ***
 
 ### Starting/Stopping Postgres (Option 2 of 2)
 
