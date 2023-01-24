@@ -18,7 +18,7 @@ In your terminal, run `softwareupdate --install-rosetta`
 Next, we need to install NVM. Run this command in your terminal:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+touch ~/.zshrc && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 Then **Restart your Terminal.**
