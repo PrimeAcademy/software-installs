@@ -8,9 +8,9 @@ Make sure to move the Postgres.app file to your Applications folder!
 
 At this point we will have a Postgres server program running on our local computer. We’re now going to install a graphical Client so we can have a fancy way to interact with our new server software. If this doesn’t work, please read to the end of the instructions to try these things before asking questions! We have solutions for several common problems.
 
-### Install Postico
+### Install Postico 1 (NOT Postico 2)
 
-1. Go to: https://eggerapps.at/postico/
+1. Go to: [https://eggerapps.at/postico/](https://eggerapps.at/postico/v1.php)
 2. Download
 3. Unzip and move to your Applications folder
 4. Open (double-click Postico icon)
