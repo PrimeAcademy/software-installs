@@ -9,8 +9,8 @@ In your terminal, run `xcode-select --install`
 You will need to make sure there is a `.zshrc` file.
 In your terminal, run `touch ~/.zshrc`
 
-### M1 Only
-If you have a M1/M2 Mac, and you encouter issues, you may need to try installing rosetta:
+### M Series Macs Only
+If you have a M1/M2/M3 Mac, and you encouter issues, you may need to try installing rosetta:  
 In your terminal, run `softwareupdate --install-rosetta`
 
 
