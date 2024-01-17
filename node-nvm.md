@@ -10,7 +10,7 @@ You will need to make sure there is a `.zshrc` file.
 In your terminal, run `touch ~/.zshrc`
 
 ### M1 Only
-If you have a M1/M2 Mac, you'll need to install rosetta:
+If you have a M1/M2 Mac, and you encouter issues, you may need to try installing rosetta:
 In your terminal, run `softwareupdate --install-rosetta`
 
 
@@ -18,7 +18,7 @@ In your terminal, run `softwareupdate --install-rosetta`
 Next, we need to install NVM. Run this command in your terminal:
 
 ```sh
-touch ~/.zshrc && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+touch ~/.zshrc && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
 Then **Restart your Terminal.**
@@ -26,7 +26,7 @@ Then **Restart your Terminal.**
 Now we can use `nvm` to install node:
 
 ```sh
-nvm install --lts
+nvm install 18
 ```
 
 To verify Node was installed, run:
@@ -35,7 +35,7 @@ To verify Node was installed, run:
 node -v
 ```
 
-You should see something like `v16.17.1` (the exact numbers don't matter).
+You should see something like `v18.19.0` (the exact numbers don't matter).
 
 ## MacOS Monterey+ Users: Turn Off AirPlay Receiver
 
