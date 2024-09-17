@@ -26,7 +26,7 @@ Then **Restart your Terminal.**
 Now we can use `nvm` to install node:
 
 ```sh
-nvm install 18
+nvm install 22
 ```
 
 To verify Node was installed, run:
@@ -35,9 +35,9 @@ To verify Node was installed, run:
 node -v
 ```
 
-You should see something like `v18.19.0` (the exact numbers don't matter).
+You should see something like `v22.0.0` (the exact numbers don't matter).
 
-## MacOS Monterey+ Users: Turn Off AirPlay Receiver
+## Turn Off AirPlay Receiver
 
 If your Mac is running the MacOS Monterey operating system (or later), you'll need to turn off "AirPlay Receiver" in the “Sharing” System Preference. This is necessary for you to run a web server using our default configuration (on port `5000`). More info [here](https://developer.apple.com/forums/thread/682332).
 
